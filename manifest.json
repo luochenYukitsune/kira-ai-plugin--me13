@@ -3,7 +3,7 @@
   "plugin_id": "me13_plugin",
   "version": "1.0.0",
   "core_version": ">=2.22.0",
-  "author": "me13",
+  "author": "luochenyukitsune",
   "description": "翁法罗斯模拟世界控制台 — 科幻主题系统管理面板",
   "repo": "https://github.com/luochenYukitsune/kira-ai-plugin--me13",
   "locales": {
