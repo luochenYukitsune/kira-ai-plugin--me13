@@ -1,0 +1,78 @@
+{
+  "section_llm": {
+    "type": "section",
+    "name": "LLM 连接配置",
+    "hint": "配置模拟世界的语言模型连接",
+    "collapsed": false,
+    "fields": {
+      "api_key": {
+        "type": "sensitive",
+        "name": "API Key",
+        "default": "",
+        "hint": "OpenAI 兼容的 API 密钥",
+        "locales": {
+          "zh": { "name": "API 密钥", "hint": "OpenAI 兼容的 API 密钥" },
+          "en": { "name": "API Key", "hint": "OpenAI-compatible API key" }
+        }
+      },
+      "base_url": {
+        "type": "string",
+        "name": "接口地址",
+        "default": "",
+        "hint": "OpenAI 兼容的 API 端点地址，如 https://api.openai.com/v1",
+        "locales": {
+          "zh": { "name": "接口地址", "hint": "OpenAI 兼容的 API 端点地址" },
+          "en": { "name": "Base URL", "hint": "OpenAI-compatible API endpoint URL" }
+        }
+      },
+      "model": {
+        "type": "string",
+        "name": "模型名称",
+        "default": "",
+        "hint": "使用的模型 ID，如 gpt-4o、gpt-4o-mini 等",
+        "locales": {
+          "zh": { "name": "模型名称", "hint": "使用的模型 ID" },
+          "en": { "name": "Model", "hint": "Model ID to use" }
+        }
+      },
+      "temperature": {
+        "type": "float",
+        "name": "Temperature",
+        "default": 0.7,
+        "hint": "生成温度，范围 0-2，越高越有创造性",
+        "locales": {
+          "zh": { "name": "温度", "hint": "生成温度，范围 0-2" },
+          "en": { "name": "Temperature", "hint": "0-2, higher = more creative" }
+        }
+      }
+    }
+  },
+  "backend_url": {
+    "type": "string",
+    "name": "后端地址",
+    "default": "",
+    "hint": "留空自动使用 KiraAI 后端（插件模式），填入地址可独立运行",
+    "locales": {
+      "zh": { "name": "后端地址", "hint": "留空自动使用 KiraAI 后端（插件模式），填入地址可独立运行" },
+      "en": { "name": "Backend URL", "hint": "Leave empty to use KiraAI backend (plugin mode), or enter URL for standalone mode" }
+    }
+  },
+  "section_display": {
+    "type": "section",
+    "name": "显示设置",
+    "hint": "控制面板的显示选项",
+    "collapsed": true,
+    "fields": {
+      "bgm_enabled": {
+        "type": "switch",
+        "name": "背景音乐",
+        "default": true,
+        "hint": "启用/禁用科幻主题背景音乐",
+        "locales": {
+          "zh": { "name": "背景音乐", "hint": "启用/禁用科幻主题背景音乐" },
+          "en": { "name": "Background Music", "hint": "Enable/disable sci-fi theme BGM" }
+        }
+      }
+    }
+  }
+}

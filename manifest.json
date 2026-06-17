@@ -1,0 +1,19 @@
+{
+  "display_name": "δ-me13 控制台",
+  "plugin_id": "me13_plugin",
+  "version": "1.0.0",
+  "core_version": ">=2.22.0",
+  "author": "me13",
+  "description": "翁法罗斯模拟世界控制台 — 科幻主题系统管理面板",
+  "repo": "https://github.com/luochenYukitsune/kira-ai-plugin--me13",
+  "locales": {
+    "zh": {
+      "display_name": "δ-me13 控制台",
+      "description": "翁法罗斯模拟世界控制台 — 科幻主题系统管理面板"
+    },
+    "en": {
+      "display_name": "δ-me13 Console",
+      "description": "Omphalos Simulation Console — Sci-fi System Admin Panel"
+    }
+  }
+}
