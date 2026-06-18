@@ -12,7 +12,7 @@ import os
 import random
 from pathlib import Path
 
-from core.plugin import BasePlugin, register, PluginPage, PageMenu
+from core.plugin import BasePlugin, register, PluginPage, PageMenu, logger
 from core.plugin import on, Priority
 from core.chat import KiraMessageBatchEvent
 
@@ -263,8 +263,8 @@ class Me13Plugin(BasePlugin):
 
     async def initialize(self):
         """插件初始化"""
-        self.logger.info("δ-me13 控制台插件已加载")
+        logger.info("δ-me13 控制台插件已加载")
 
     async def terminate(self):
         """插件卸载"""
-        self.logger.info("δ-me13 控制台插件已卸载")
+        logger.info("δ-me13 控制台插件已卸载")
